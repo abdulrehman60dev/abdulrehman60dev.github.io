@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Rehman — Graduate Software Engineer</title>
+  <meta name="description" content="Abdul Rehman — Graduate Software Engineer. C#/.NET and Python engineer building back-end services, REST APIs and databases, with hands-on Unity/C# game development. MSc Advanced Computer Science (Distinction)." />
+  <meta name="author" content="Abdul Rehman" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Abdul Rehman — Graduate Software Engineer" />
+  <meta property="og:description" content="C#/.NET & Python engineer building back-end services, REST APIs and databases, with hands-on Unity/C# game development." />
+  <!-- TODO: replace with your live URL once deployed, e.g. https://abdulrehman60dev.github.io/ -->
+  <meta property="og:url" content="https://abdulrehman60dev.github.io/" />
+  <!-- TODO: add assets/og-image.png (1200x630) for a nicer social preview, then uncomment -->
+  <!-- <meta property="og:image" content="https://abdulrehman60dev.github.io/assets/og-image.png" /> -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Abdul Rehman — Graduate Software Engineer" />
+  <meta name="twitter:description" content="C#/.NET & Python engineer building back-end services, REST APIs and databases, with hands-on Unity/C# game development." />
+
+  <!-- Favicon: inline SVG monogram (no external file) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-size='30' font-weight='700' fill='white'%3EAR%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#hero" aria-label="Abdul Rehman — home">AR<span>.</span></a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="menuToggle" class="icon-btn nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav id="mobileMenu" class="nav__mobile" aria-label="Mobile" hidden>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">Hi, I'm</p>
+          <h1 class="hero__name">Abdul Rehman</h1>
+          <p class="hero__title">Graduate Software Engineer</p>
+          <p class="hero__pitch">
+            A C#/.NET and Python engineer building back-end services, REST APIs and databases —
+            with hands-on game development in Unity/C#. I like owning projects from design
+            through delivery, writing clean, tested code.
+          </p>
+          <div class="hero__cta">
+            <!-- TODO: add your PDF at cv/AbdulRehman_CV.pdf -->
+            <a class="btn btn--primary" href="cv/AbdulRehman_CV.pdf" download>Download CV</a>
+            <a class="btn btn--ghost" href="#projects">View Projects</a>
+          </div>
+          <div class="hero__socials">
+            <a href="https://github.com/abdulrehman60dev" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/ar-dev" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="https://leetcode.com/u/AbdulRehman60dev" target="_blank" rel="noopener" aria-label="LeetCode">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.1 1.6a1.4 1.4 0 0 0-2 0L4.3 11.3a3.9 3.9 0 0 0 0 5.5l5 5a3.9 3.9 0 0 0 5.5 0l2.6-2.6a1.4 1.4 0 0 0-2-2l-2.6 2.6a1.1 1.1 0 0 1-1.6 0l-5-5a1.1 1.1 0 0 1 0-1.6l9.8-9.7a1.4 1.4 0 0 0 0-2zM20.6 12.3h-8a1.4 1.4 0 0 0 0 2.8h8a1.4 1.4 0 0 0 0-2.8z"/></svg>
+            </a>
+            <a href="mailto:abdulrehman60dev@gmail.com" aria-label="Email">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero__avatar reveal" aria-hidden="true">
+          <!-- Swap this monogram for a photo: put a square image at assets/profile.jpg
+               and replace this block with: <img src="assets/profile.jpg" alt="Abdul Rehman"> -->
+          <div class="monogram">AR</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="section__num">01.</span> About</h2>
+        <div class="about reveal">
+          <p>
+            I'm a graduate software engineer based in North West London, focused on back-end
+            development in <strong>C#/.NET</strong> and <strong>Python</strong> — REST APIs,
+            relational databases and clean, tested code. I recently completed an
+            <strong>MSc in Advanced Computer Science (Distinction)</strong> at the University of
+            Hertfordshire.
+          </p>
+          <p>
+            Alongside back-end work I have hands-on experience in <strong>Unity/C# game
+            development</strong>, from gameplay systems and procedural generation to integrating
+            server-side accounts and purchases. I enjoy taking a problem from an initial idea
+            through to a working, well-tested feature — and I care about writing code that a team
+            can build on.
+          </p>
+          <ul class="about__facts">
+            <li><span>📍</span> North West London, UK</li>
+            <li><span>🎓</span> MSc Advanced Computer Science — Distinction</li>
+            <li><span>🏆</span> Game Developer Award, XISLABS 2024</li>
+            <li><span>🗣️</span> IELTS Band 7.0 (C1 English)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="section__num">02.</span> Skills</h2>
+        <div class="skills">
+          <div class="skill-card reveal">
+            <h3>Languages</h3>
+            <ul class="tags">
+              <li>C#</li><li>Python</li><li>JavaScript</li><li>SQL</li><li>Java</li><li>TypeScript</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Back-end &amp; APIs</h3>
+            <ul class="tags">
+              <li>ASP.NET Core (.NET 8/9)</li><li>REST API design</li><li>JWT auth</li><li>EF Core</li><li>SOLID</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Databases</h3>
+            <ul class="tags">
+              <li>MySQL</li><li>PostgreSQL</li><li>SQL Server</li><li>Query optimisation</li><li>NoSQL <em>(learning)</em></li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Data</h3>
+            <ul class="tags">
+              <li>pandas</li><li>NumPy</li><li>Data analysis</li><li>Jupyter</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Game Development</h3>
+            <ul class="tags">
+              <li>Unity</li><li>C#</li><li>Procedural content generation</li><li>Gameplay &amp; server integration</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Tools &amp; DevOps</h3>
+            <ul class="tags">
+              <li>Git/GitHub</li><li>Docker <em>(basics)</em></li><li>GitHub Actions CI/CD <em>(basics)</em></li><li>Azure <em>(basics)</em></li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Practices</h3>
+            <ul class="tags">
+              <li>OOP</li><li>Design patterns</li><li>Unit &amp; integration testing</li><li>Code review</li><li>Agile/Scrum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="section__num">03.</span> Projects</h2>
+        <div class="projects">
+
+          <article class="project reveal">
+            <div class="project__top">
+              <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <div class="project__links">
+                <!-- TODO: replace href="#" with the GitHub repo URL -->
+                <a href="#" aria-label="RAGNARIC GitHub repository" title="GitHub repo (add link)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg></a>
+              </div>
+            </div>
+            <h3 class="project__name">RAGNARIC — RAG Chatbot &amp; Data Service</h3>
+            <p class="project__desc">Privacy-first RAG chatbot and data service: a JWT-secured REST API with EF Core session persistence and an end-to-end document retrieval flow. Dockerised; provider-agnostic between local and cloud back-ends.</p>
+            <ul class="tags tags--sm">
+              <li>ASP.NET Core</li><li>C#</li><li>Python</li><li>REST API</li><li>JWT</li><li>EF Core</li><li>Docker</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <div class="project__links">
+                <!-- TODO: replace href="#" with the GitHub repo URL -->
+                <a href="#" aria-label="Galaxy Fox GitHub repository" title="GitHub repo (add link)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg></a>
+              </div>
+            </div>
+            <h3 class="project__name">Galaxy Fox: Space Runner</h3>
+            <p class="project__desc">A Unity/C# endless runner with a companion web store powered by a REST API I built — players buy ships and power-ups online and unlock them in-game via the same account, with server-side accounts and purchase sync.</p>
+            <ul class="tags tags--sm">
+              <li>Unity</li><li>C#</li><li>REST API</li><li>Server-side accounts</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <div class="project__links">
+                <!-- TODO: replace href="#" with the GitHub repo URL -->
+                <a href="#" aria-label="Hexawar GitHub repository" title="GitHub repo (add link)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg></a>
+              </div>
+            </div>
+            <h3 class="project__name">Hexawar — Hex-Grid Strategy Game</h3>
+            <p class="project__desc">A turn-based hex-grid strategy game in Unity/C# — hex map generation, unit movement and turn logic, and win/lose conditions.</p>
+            <ul class="tags tags--sm">
+              <li>C#</li><li>Unity</li><li>Turn-based</li><li>Grid systems</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <div class="project__links">
+                <!-- TODO: replace href="#" with the GitHub repo URL -->
+                <a href="#" aria-label="Dungeon Generator GitHub repository" title="GitHub repo (add link)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg></a>
+              </div>
+            </div>
+            <h3 class="project__name">2D Procedural Dungeon Generator (BSP + WFC)</h3>
+            <p class="project__desc">A hybrid Binary Space Partitioning + Wave Function Collapse algorithm in C#/Unity for procedural level generation, benchmarked against standard BSP for spatial balance, connectivity and speed.</p>
+            <ul class="tags tags--sm">
+              <li>C#</li><li>Unity</li><li>BSP</li><li>Wave Function Collapse</li><li>Benchmarking</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <div class="project__links">
+                <!-- TODO: replace href="#" with the GitHub repo URL -->
+                <a href="#" aria-label="Transaction Data Analysis GitHub repository" title="GitHub repo (add link)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg></a>
+              </div>
+            </div>
+            <h3 class="project__name">Transaction Data Analysis</h3>
+            <p class="project__desc">Python/pandas data cleaning and analysis over transaction-style datasets — deduplication, normalisation and aggregation into PostgreSQL — surfacing a data-quality issue affecting ~8% of records.</p>
+            <ul class="tags tags--sm">
+              <li>Python</li><li>pandas</li><li>PostgreSQL</li><li>Jupyter</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <div class="project__links">
+                <!-- TODO: replace href="#" with the GitHub repo URL -->
+                <a href="#" aria-label="E-Commerce Order Management GitHub repository" title="GitHub repo (add link)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg></a>
+              </div>
+            </div>
+            <h3 class="project__name">E-Commerce Order Management System</h3>
+            <p class="project__desc">A full-stack order management application in PHP Laravel with a JavaScript front-end and MySQL — products, carts, orders and an admin dashboard behind a clean REST API.</p>
+            <ul class="tags tags--sm">
+              <li>PHP Laravel</li><li>JavaScript</li><li>MySQL</li><li>REST API</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="section__num">04.</span> Experience</h2>
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <div class="timeline__head">
+                <h3>Game Programmer <span>(Unity / C#)</span></h3>
+                <span class="timeline__date">Jan 2024 – Dec 2024</span>
+              </div>
+              <p class="timeline__org">XISLABS · Lahore, Pakistan</p>
+              <ul>
+                <li>Developed gameplay features and systems in Unity/C# within an Agile team — sprint planning, code reviews and coordinated releases across engineering, design and art.</li>
+                <li>Built core mechanics, UI and level/content systems; profiled and optimised performance, fixed bugs, and integrated REST APIs for accounts, purchases and data sync.</li>
+                <li>Recognised with the XISLABS Game Developer Award (2024).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <div class="timeline__head">
+                <h3>Software Developer <span>(Freelance)</span></h3>
+                <span class="timeline__date">Jan 2019 – Sept 2023</span>
+              </div>
+              <p class="timeline__org">Self-employed · Remote</p>
+              <ul>
+                <li>Built REST APIs and database-driven back-end applications in .NET Framework and Java with MySQL for multiple clients — tested with Postman and documented throughout.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="section__num">05.</span> Education</h2>
+        <div class="edu">
+          <div class="edu-card reveal">
+            <div class="edu-card__head">
+              <h3>MSc Advanced Computer Science</h3>
+              <span class="badge">Distinction</span>
+            </div>
+            <p class="edu-card__org">University of Hertfordshire · Jan 2025 – Jun 2026</p>
+            <p class="edu-card__modules">
+              Computational Algorithms and Paradigms · Programming for Software Engineers ·
+              Artificial Life with Robotics · Responsible Technology ·
+              Team Research and Development Project · Advanced Computer Science Masters Project
+            </p>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-card__head">
+              <h3>BSc Software Engineering</h3>
+              <span class="badge badge--muted">GPA 3.66 / 4.0</span>
+            </div>
+            <p class="edu-card__org">GIFT University, Pakistan · Sep 2019 – Oct 2023</p>
+            <p class="edu-card__modules">
+              Data Structures &amp; Algorithms · Database Systems · OOP · Software Engineering Principles
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section section--alt">
+      <div class="container contact reveal">
+        <h2 class="section__title"><span class="section__num">06.</span> Get in touch</h2>
+        <p class="contact__lead">
+          I'm actively looking for graduate software engineering roles in London. If you'd like to
+          talk, I'd love to hear from you.
+        </p>
+        <a class="btn btn--primary btn--lg" href="mailto:abdulrehman60dev@gmail.com">Say hello</a>
+        <div class="contact__grid">
+          <a href="mailto:abdulrehman60dev@gmail.com">abdulrehman60dev@gmail.com</a>
+          <a href="tel:+447988626205">+44 7988 626205</a>
+          <a href="https://github.com/abdulrehman60dev" target="_blank" rel="noopener">github.com/abdulrehman60dev</a>
+          <a href="https://linkedin.com/in/ar-dev" target="_blank" rel="noopener">linkedin.com/in/ar-dev</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by Abdul Rehman · <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
